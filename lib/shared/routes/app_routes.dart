@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../modules/movie/movie_bindings.dart';
+import '../../modules/movie/movie_page.dart';
+
 class RoutesApp {
   RoutesApp._();
 
@@ -10,8 +13,8 @@ class RoutesApp {
   static final routes = [
     GetPage(
       name: RoutesApp.movie,
-      page: () => const Scaffold(),
-      // binding: MovieBindings(),
+      page: () => const MoviePage(),
+      binding: MovieBindings(),
     ),
     GetPage(
       name: RoutesApp.movieDetails,
